@@ -1,4 +1,4 @@
-package steps;
+package steps.googleSteps;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -32,18 +32,13 @@ public class Google_StepDefs {
         googleHomePage.searchBox.sendKeys("wooden spoon"+ Keys.ENTER);
     }
 
-//    @When("User clicks to search button")
-//    public void user_clicks_to_search_button() {
-//
-//        googleHomePage.searchButton.click();
-//    }
 
     @Then("User should see wooden spoon in the title")
     public void user_should_see_wooden_spoon_in_the_title() {
 
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "wooden spoon";
-        Assert.assertTrue(actualTitle.contains(expectedTitle));
+        Assert.assertTrue(!actualTitle.contains(expectedTitle));
     }
 
 
