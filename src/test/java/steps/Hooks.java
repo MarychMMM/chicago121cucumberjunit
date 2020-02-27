@@ -23,7 +23,7 @@ public class Hooks {
             scenario.embed(screenshot, "image/png");
         }
 
-        Driver.quitDriver();
+        //Driver.quitDriver();
     }
 
 }

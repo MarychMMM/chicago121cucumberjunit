@@ -25,7 +25,7 @@ public class CreateCalendarEventsPages {
     @FindBy(css = "[id^= 'oro_calendar_event_form_title']")
     public WebElement titleField;
 
-    @FindBy(css = "[id^= 'oro_calendar_event_form_start']")
+    @FindBy(css = "[id^= 'date_selector_oro_calendar_event_form_start']")
     public WebElement startDate;
 
     @FindBy(css = "[id^= 'time_selector_oro_calendar_event_form_start']")

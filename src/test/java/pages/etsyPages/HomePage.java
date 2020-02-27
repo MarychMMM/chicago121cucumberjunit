@@ -1,4 +1,4 @@
-package pages.smartbearPages;
+package pages.etsyPages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,10 +11,6 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//div[@class='login_info']")
-    public WebElement textWelcomeTester;
-
-    @FindBy(xpath = "//a[@href='Process.aspx']")
-    public WebElement orderButton;
-
+    @FindBy(id = "global-enhancements-search-query")
+    public WebElement searchBox;
 }

@@ -1,0 +1,2085 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 967015,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;2",
+        "after": [
+          {
+            "result": {
+              "duration": 109354,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12487998242,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153127957,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"MyMoney\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80415512,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"1\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125684610,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Ken Adams\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ken Adams\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103717084,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"Kinzie st\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kinzie st\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92472417,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Chicago\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59038112,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81604685,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60004\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60004\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58326627,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139734438,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"313313133315\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"313313133315\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66196306,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"12/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 188130261,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 378973175,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Ken Adams\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ken Adams\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 66053,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;3",
+        "after": [
+          {
+            "result": {
+              "duration": 36871,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 753288660,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 121166861,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"FamilyAlbum\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FamilyAlbum\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66469823,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"4\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116349588,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Joey Tribbiani\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Joey Tribbiani\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97379717,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"State st\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"State st\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86673938,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Chicago\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64906434,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84343290,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60656\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60656\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51125262,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119645053,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"123433533336\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123433533336\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84342573,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"11/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201249338,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 373690888,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Joey Tribbiani\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Joey Tribbiani\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 58058,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;4",
+        "after": [
+          {
+            "result": {
+              "duration": 36047,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 843235274,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 114108557,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"ScreenSaver\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ScreenSaver\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56287520,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"5\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106332123,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Rachel Green\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rachel Green\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92057679,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"Michigan st\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Michigan st\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75313317,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Chicago\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50808634,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60390193,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60656\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60656\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65591986,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91616635,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"335333333337\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"335333333337\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59142652,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"10/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135214789,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 328054668,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Rachel Green\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rachel Green\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 69216,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;5",
+        "after": [
+          {
+            "result": {
+              "duration": 54910,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 683333260,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90058672,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"MyMoney\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58028380,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"5\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105919794,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Chandler Bing\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chandler Bing\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72127930,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"Erie st\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Erie st\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68682480,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Chicago\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51398152,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62609379,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60666\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60666\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56893329,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93436518,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"433353333338\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"433353333338\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58888681,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"10/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161153301,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 378600057,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Chandler Bing\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chandler Bing\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 72937,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;6",
+        "after": [
+          {
+            "result": {
+              "duration": 106005,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 772165858,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102384734,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"FamilyAlbum\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FamilyAlbum\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58476644,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"9\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117312749,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Dr DrakeRamoray\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dr DrakeRamoray\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76971141,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"Dale st\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dale st\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85949873,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Arl Hgths\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Arl Hgths\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53686087,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66351858,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60452\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60452\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66605442,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129775666,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"532333335334\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"532333335334\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75136135,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"10/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223282689,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371064535,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Dr DrakeRamoray\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dr DrakeRamoray\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 55402,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;7",
+        "after": [
+          {
+            "result": {
+              "duration": 31434,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 769982876,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115418425,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"ScreenSaver\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ScreenSaver\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73946426,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"10\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112230515,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Monica Geller\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Monica Geller\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89319083,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"Euclid ave\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Euclid ave\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90208253,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Arl Hgths\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Arl Hgths\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56856133,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63271328,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60312\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60312\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62460064,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110388126,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"733533333333\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"733533333333\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64399701,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"11/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179870603,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 322717572,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Monica Geller\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Monica Geller\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 58639,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;8",
+        "after": [
+          {
+            "result": {
+              "duration": 44930,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 668878369,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80129838,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"MyMoney\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53132842,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"3\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99274914,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Ross Geller\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ross Geller\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75053256,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"River rd\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"River rd\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87286956,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Des Plaines\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Des Plaines\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50614836,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61863146,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60666\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60666\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64587092,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104673788,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"833435363732\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"833435363732\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62299939,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"10/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161538427,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 606684663,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Ross Geller\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ross Geller\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 46063,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "SmartBear order process",
+        "description": "",
+        "id": "smartbear-order-placing-feature;smartbear-order-process;user-fills-out-the-form-as-followed-from-the-table-below;9",
+        "after": [
+          {
+            "result": {
+              "duration": 40733,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 654356966,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged into SmartBear Tester account and on Order page",
+            "match": {
+              "location": "OrderStepDefs.user_is_logged_into_SmartBear_Tester_account_and_on_Order_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80178996,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"MyMoney\" from product dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_from_product_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49299708,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"1\" to quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_quantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98111919,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"Ken Adams\" to costumer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ken Adams\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_costumer_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86764436,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"Kinzie st\" to street",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kinzie st\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_street(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74123008,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"Chicago\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53135572,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"IL\"to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IL\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_state(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66374918,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"60312\" to zip",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60312\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_zip(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50841640,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects \"Visa\" as card type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 13
+                }
+              ],
+              "location": "OrderStepDefs.user_selects_as_card_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103583511,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"933533333531\" to card number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"933533333531\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_card_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61024137,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"12/22\" to expiration date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12/22\"",
+                  "offset": 12
+                }
+              ],
+              "location": "OrderStepDefs.user_enters_to_expiration_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189175018,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks process button",
+            "match": {
+              "location": "OrderStepDefs.user_clicks_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 336926210,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies \"Ken Adams\" is in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ken Adams\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderStepDefs.user_verifies_is_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smartBear"
+          }
+        ]
+      }
+    ],
+    "name": "Smartbear order placing feature",
+    "description": "  Agile story: When user is on the Order page, user should be able to place order after filling out the form",
+    "id": "smartbear-order-placing-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/SmartbearFeatures/orderProcess.feature",
+    "tags": []
+  }
+]

@@ -15,6 +15,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CreateCalendarEventsPageSteps {
@@ -34,17 +35,22 @@ public class CreateCalendarEventsPageSteps {
     @When("the user is on the All Calendar Events page under the Activities tab")
     public void the_user_is_on_the_All_Calendar_Events_page_under_the_Activities_tab() {
 
+
+        SeleniumUtils.pauseWithTreadSleep(5);
         DashboardsPage.navigateToModule("Activities", "Calendar Events");
     }
 
     @When("the user is taken to the Create Calendar Events page after clicking the Create Calendar Event button")
     public void the_user_is_taken_to_the_Create_Calendar_Events_page_after_clicking_the_Create_Calendar_Event_button() {
 
+        SeleniumUtils.waitForVisibility(createCalendarEventsPages.createCalendarEventsBtn,5);
         createCalendarEventsPages.createCalendarEventsBtn.click();
     }
 
     @When("the user should see their name as the default value of of the owner field")
     public void the_user_should_see_their_name_as_the_default_value_of_of_the_owner_field() {
+
+        SeleniumUtils.pauseWithTreadSleep(2);
 
         String owner = createCalendarEventsPages.ownerField.getText().trim();
         String loginUser = createCalendarEventsPages.loginUser.getText().trim();
@@ -55,6 +61,7 @@ public class CreateCalendarEventsPageSteps {
     @When("the user should see the title field to be empty by default")
     public void the_user_should_see_the_title_field_to_be_empty_by_default() {
 
+        SeleniumUtils.pauseWithTreadSleep(2);
         Assert.assertTrue(createCalendarEventsPages.titleField.getAttribute("value").isEmpty());
     }
 
@@ -62,6 +69,8 @@ public class CreateCalendarEventsPageSteps {
     public void the_user_should_see_the_start_date_field_with_the_default_value_of_the_current_date() {
 
         String expectedDate = LocalDate.now().format(DateTimeFormatter.ofPattern("MMM d, yyyy"));
+
+        SeleniumUtils.pauseWithTreadSleep(2);
         String actualDate = createCalendarEventsPages.startDate.getAttribute("value");
 
         Assert.assertEquals(expectedDate,actualDate);
@@ -71,6 +80,8 @@ public class CreateCalendarEventsPageSteps {
     public void the_user_should_see_the_start_time_field_with_the_default_value_of_the_current_time() {
 
         String expectedTime = LocalTime.now().minusHours(2).format(DateTimeFormatter.ofPattern("hh:mm a"));
+
+        SeleniumUtils.pauseWithTreadSleep(2);
         String actualTime = createCalendarEventsPages.starTime.getAttribute("value");
         Assert.assertEquals(expectedTime,actualTime);
     }
@@ -83,10 +94,13 @@ public class CreateCalendarEventsPageSteps {
     @Then("the user sees the Repeats select field with the following options: Daily, Weekly, Monthly, Yearly")
     public void the_user_sees_the_Repeats_select_field_with_the_following_options_Daily_Weekly_Monthly_Yearly() {
 
-        List<String> actualOptions = SeleniumUtils.getAllSelectOptions(createPage.repeatSelectField);
-        List<String> expectedOptions = new ArrayList<>();
-        expectedOptions.add("Daily"); expectedOptions.add("Weekly"); expectedOptions.add("Monthly");
-        expectedOptions.add("Yearly");
+
+        List<String> actualOptions = SeleniumUtils.getAllSelectOptions(createCalendarEventsPages.repeatSelectField);
+        List<String> expectedOptions = new ArrayList<>(Arrays.asList("Daily","Weekly","Monthly","Yearly"));
+//        List<String> expectedOptions = new ArrayList<>();
+//        expectedOptions.add("Daily"); expectedOptions.add("Weekly"); expectedOptions.add("Monthly");
+//        expectedOptions.add("Yearly");
+
         Assert.assertEquals(expectedOptions, actualOptions);
     }
 }

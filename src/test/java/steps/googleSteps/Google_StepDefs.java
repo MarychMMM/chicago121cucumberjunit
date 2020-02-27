@@ -38,7 +38,7 @@ public class Google_StepDefs {
 
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "wooden spoon";
-        Assert.assertTrue(!actualTitle.contains(expectedTitle));
+        Assert.assertTrue(actualTitle.contains(expectedTitle));
     }
 
 

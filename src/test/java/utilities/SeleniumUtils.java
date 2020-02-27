@@ -1,5 +1,6 @@
 package utilities;
 
+import org.junit.AfterClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -25,5 +26,21 @@ public class SeleniumUtils {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), seconds);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    public static void pauseWithTreadSleep(int seconds){
+        try {
+            Thread.sleep(seconds * 1000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+
+    public static void explicitWaitForInvisibility(WebElement element, int seconds){
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), seconds);
+        wait.until(ExpectedConditions.invisibilityOf(element));
+
+    }
+
+
 
 }
