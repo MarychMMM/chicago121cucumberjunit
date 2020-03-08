@@ -1,4 +1,4 @@
-package steps;
+package runners;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -6,12 +6,14 @@ import cucumber.api.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
+import utilities.TempStorage;
 
 public class Hooks {
 
     @Before // cucumber.api.java
     public void setup(){
         //Anything that you want to run before each Scenario
+        TempStorage.clear();
     }
 
     @After
@@ -23,7 +25,8 @@ public class Hooks {
             scenario.embed(screenshot, "image/png");
         }
 
-        //Driver.quitDriver();
+        System.out.println("Hooks");
+        Driver.quitDriver();
     }
 
 }
