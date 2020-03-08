@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
        features = "src/test/resources/features/",
         glue = "steps",
         dryRun = false,
-       tags = "@smartBear"
+       tags = "@positiveLogin,@negativeLogin"
 )
 
 public class CukesRunner {

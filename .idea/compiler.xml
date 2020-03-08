@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="FrameworkFirst" />
         <module name="CucumberJunitFramework" />
+        <module name="chicago121cucumberjunit" />
       </profile>
     </annotationProcessing>
   </component>
